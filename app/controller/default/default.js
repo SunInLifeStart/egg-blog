@@ -4,7 +4,11 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    this.ctx.body = 'hi, egg';
+    console.log('===================');
+    console.log(this.app.mysql);
+    console.log('===================');
+    // this.ctx.body = await this.app.mysql.get("blog_content",{});
+    this.ctx.body = 'sda';
   }
 }
 

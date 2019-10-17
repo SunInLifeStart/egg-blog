@@ -1,0 +1,238 @@
+2019-10-17 15:00:40,301 ERROR 46702 [-/127.0.0.1/-/0ms GET /] nodejs.ENOTFOUNDError: getaddrinfo ENOTFOUND http://115.28.184.6 http://115.28.184.6:9080 (http://115.28.184.6)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+    --------------------
+    at Protocol._enqueue (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:119:18)
+    at Pool.getConnection (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Pool.js:48:16)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:56:34)
+    at Pool.query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:29:7
+    sql: select now() as currentTime;
+errno: "ENOTFOUND"
+code: "ENOTFOUND"
+syscall: "getaddrinfo"
+hostname: "http://115.28.184.6"
+host: "http://115.28.184.6"
+port: "9080"
+fatal: true
+name: "ENOTFOUNDError"
+pid: 46702
+hostname: shenxhdeMacBook-Pro.local
+
+2019-10-17 15:01:30,473 ERROR 46718 [-/127.0.0.1/-/0ms GET /] nodejs.PROTOCOL_SEQUENCE_TIMEOUTError: Handshake inactivity timeout
+    at Handshake.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:160:17)
+    at emitNone (events.js:106:13)
+    at Handshake.emit (events.js:208:7)
+    at Handshake._onTimeout (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:124:8)
+    at Timer._onTimeout (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Timer.js:32:23)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+    --------------------
+    at Protocol._enqueue (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:119:18)
+    at Pool.getConnection (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Pool.js:48:16)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:56:34)
+    at Pool.query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:29:7
+    sql: select now() as currentTime;
+code: "PROTOCOL_SEQUENCE_TIMEOUT"
+fatal: true
+timeout: 10000
+name: "PROTOCOL_SEQUENCE_TIMEOUTError"
+pid: 46718
+hostname: shenxhdeMacBook-Pro.local
+
+2019-10-17 15:04:09,125 ERROR 46740 [-/127.0.0.1/-/0ms GET /] nodejs.ETIMEDOUTError: connect ETIMEDOUT 115.28.184.6:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+    --------------------
+    at Protocol._enqueue (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:119:18)
+    at Pool.getConnection (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Pool.js:48:16)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:56:34)
+    at Pool.query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:29:7
+    sql: select now() as currentTime;
+errno: "ETIMEDOUT"
+code: "ETIMEDOUT"
+syscall: "connect"
+address: "115.28.184.6"
+port: 3306
+fatal: true
+name: "ETIMEDOUTError"
+pid: 46740
+hostname: shenxhdeMacBook-Pro.local
+
+2019-10-17 15:11:43,164 ERROR 46789 [-/127.0.0.1/-/1ms GET /] nodejs.ETIMEDOUTError: connect ETIMEDOUT
+    at PoolConnection.Connection._handleConnectTimeout (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:412:13)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:422:8)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+    --------------------
+    at Protocol._enqueue (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:119:18)
+    at Pool.getConnection (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Pool.js:48:16)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:56:34)
+    at Pool.query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:29:7
+    sql: select now() as currentTime;
+errorno: "ETIMEDOUT"
+code: "ETIMEDOUT"
+syscall: "connect"
+fatal: true
+name: "ETIMEDOUTError"
+pid: 46789
+hostname: shenxhdeMacBook-Pro.local
+
+2019-10-17 15:34:23,823 ERROR 46965 nodejs.unhandledRejectionError: ER_NO_SUCH_TABLE: Table 'react_blog.RDSClient' doesn't exist
+    at Query.Sequence._packetToError (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Pool.query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/timeGap/webSpace/personal/egg-blog/node_modules/co/index.js:65:19)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/co/index.js:54:5
+    sql: SELECT * FROM `RDSClient` LIMIT 0, 1
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'react_blog.RDSClient' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "SELECT * FROM `RDSClient` LIMIT 0, 1"
+name: "unhandledRejectionError"
+pid: 46965
+hostname: shenxhdeMacBook-Pro.local
+
+2019-10-17 15:35:33,396 ERROR 46977 nodejs.unhandledRejectionError: ER_NO_SUCH_TABLE: Table 'react_blog.root' doesn't exist
+    at Query.Sequence._packetToError (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Pool.query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/timeGap/webSpace/personal/egg-blog/node_modules/co/index.js:65:19)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/co/index.js:54:5
+    sql: SELECT * FROM `root` LIMIT 0, 1
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'react_blog.root' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "SELECT * FROM `root` LIMIT 0, 1"
+name: "unhandledRejectionError"
+pid: 46977
+hostname: shenxhdeMacBook-Pro.local
+
+2019-10-17 15:36:04,857 ERROR 46983 nodejs.unhandledRejectionError: ER_NO_SUCH_TABLE: Table 'react_blog.blog_content' doesn't exist
+    at Query.Sequence._packetToError (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Pool.query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/timeGap/webSpace/personal/egg-blog/node_modules/co/index.js:65:19)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/co/index.js:54:5
+    sql: SELECT * FROM `blog_content` LIMIT 0, 1
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'react_blog.blog_content' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "SELECT * FROM `blog_content` LIMIT 0, 1"
+name: "unhandledRejectionError"
+pid: 46983
+hostname: shenxhdeMacBook-Pro.local
+
+2019-10-17 15:37:35,951 ERROR 46983 nodejs.unhandledRejectionError: ER_NO_SUCH_TABLE: Table 'react_blog.blog_content' doesn't exist
+    at Query.Sequence._packetToError (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+    at Parser._parsePacket (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Parser.js:433:10)
+    at Parser.write (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Parser.js:43:10)
+    at Protocol.write (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Connection.js:525:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    --------------------
+    at Pool.query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/timeGap/webSpace/personal/egg-blog/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/timeGap/webSpace/personal/egg-blog/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/timeGap/webSpace/personal/egg-blog/node_modules/co/index.js:65:19)
+    at /Users/timeGap/webSpace/personal/egg-blog/node_modules/co/index.js:54:5
+    sql: SELECT * FROM `blog_content` LIMIT 0, 1
+code: "ER_NO_SUCH_TABLE"
+errno: 1146
+sqlMessage: "Table 'react_blog.blog_content' doesn't exist"
+sqlState: "42S02"
+index: 0
+sql: "SELECT * FROM `blog_content` LIMIT 0, 1"
+name: "unhandledRejectionError"
+pid: 46983
+hostname: shenxhdeMacBook-Pro.local
+

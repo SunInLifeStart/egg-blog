@@ -184,7 +184,14 @@
         "connectionLimit": 5
       },
       "app": true,
-      "agent": false
+      "agent": false,
+      "client": {
+        "host": "115.28.184.6",
+        "port": "3306",
+        "user": "rootroot",
+        "password": "<String len: 8>",
+        "database": "react_blog"
+      }
     },
     "env": "local",
     "name": "blog-server",
